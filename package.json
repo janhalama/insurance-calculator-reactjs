@@ -1,0 +1,38 @@
+{
+  "name": "insurance-calculator-reactjs",
+  "version": "1.0.0",
+  "description": "Insurance calculator written as Node.js web app and React.js view",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan Halama",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^1.0.3",
+    "express": "^4.14.0",
+    "font-awesome": "^4.7.0",
+    "ie": "^0.1.0",
+    "lazy-input": "^2.0.0",
+    "moment": "^2.17.0",
+    "promise": "^7.1.1",
+    "react": "^15.4.1",
+    "react-async-input": "^0.9.2",
+    "react-date-picker-component": "^5.0.6",
+    "react-dom": "^15.4.1",
+    "reflux": "^5.0.3",
+    "superagent": "^3.0.0",
+    "superagent-no-cache": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "browserify": "^13.1.1",
+    "combined-stream": "^1.0.5",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-react": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
+    "os": "^0.1.1",
+    "pump": "^1.0.1"
+  }
+}
