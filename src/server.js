@@ -56,6 +56,7 @@ converter.fromFile("./doc/zv_pcobc.csv",function(err,result){
 });
 
 //start web server listening
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+var port = process.env.port || 3000;
+app.listen(port, function () {
+  console.log('Insurance calculator web server started listening on port ' + port)
 })
