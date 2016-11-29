@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node .\\src\\server.js",
-	"install": "gulp rbuild"
+    "install": "gulp rbuild"
   },
   "engines": {
     "node": "6.6.0"
@@ -29,13 +29,18 @@
   },
   "devDependencies": {
     "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babelify": "^7.3.0",
     "browserify": "^13.1.1",
     "combined-stream": "^1.0.5",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-react": "^3.1.0",
+    "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
     "os": "^0.1.1",
-    "pump": "^1.0.1"
+    "pump": "^1.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
   }
 }
