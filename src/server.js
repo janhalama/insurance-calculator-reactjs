@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 
 //javascript
 app.get('/bundle.js', function (req, res) {
-  res.sendFile('dist/bundle.js', { root: __dirname })
+  res.sendFile('dist/minified/bundle.js', { root: __dirname })
 })
 
 //zip code rest api
