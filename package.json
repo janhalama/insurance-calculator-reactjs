@@ -4,10 +4,12 @@
   "description": "Insurance calculator written as Node.js web app and React.js view",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .\\src\\server.js",
+	"install": "gulp rbuild"
   },
   "engines": {
-     "node": "6.6.0"
+    "node": "6.6.0"
   },
   "author": "Jan Halama",
   "license": "ISC",
