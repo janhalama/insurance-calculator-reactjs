@@ -2,7 +2,7 @@
   "name": "insurance-calculator-reactjs",
   "version": "1.0.0",
   "description": "Insurance calculator written as Node.js web app and React.js view",
-  "main": "src/server.js",
+  "main": "./src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node .\\src\\server.js",

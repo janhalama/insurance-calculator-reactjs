@@ -3,18 +3,18 @@ var app = express()
 var zipCodes = null;
 
 //static content
-app.use('/font-awesome', express.static('./node_modules/font-awesome'))
-app.use('/skeleton', express.static('./src/css/skeleton'))
-app.use('/insurance-calculator', express.static('./src/css/insurance-calculator'))
+app.use('/font-awesome', express.static('../node_modules/font-awesome'))
+app.use('/skeleton', express.static('./css/skeleton'))
+app.use('/insurance-calculator', express.static('./css/insurance-calculator'))
 
 //index page
 app.get('/', function (req, res) {
-  res.sendFile('index.html', { root: __dirname })
+  res.sendFile('./index.html', { root: __dirname })
 })
 
 //javascript
 app.get('/bundle.js', function (req, res) {
-  res.sendFile('dist/minified/bundle.js', { root: __dirname })
+  res.sendFile('./dist/minified/bundle.js', { root: __dirname })
 })
 
 //zip code rest api
@@ -50,7 +50,7 @@ var converter = new Converter({
 								 noheader:false
 							  });
 //TODO: load to hashtable instead of array for faster lookup
-converter.fromFile("./doc/zv_pcobc.csv",function(err,result){
+converter.fromFile("../doc/zv_pcobc.csv",function(err,result){
 	zipCodes = result;
 	console.log('Zip codes file ./doc/zv_pcobc.csv parsed', zipCodes)
 });
